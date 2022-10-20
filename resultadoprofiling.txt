@@ -1,200 +1,189 @@
-Statistical profiling result from profiling1.log, (23185 ticks, 4 unaccounted, 0 excluded).
+Statistical profiling result from profiling.log, (1121 ticks, 2 unaccounted, 0 excluded).
 
  [Shared libraries]:
    ticks  total  nonlib   name
-     34    0.1%          /usr/lib/system/libsystem_pthread.dylib
-     22    0.1%          /usr/lib/system/libsystem_c.dylib
-     12    0.1%          /usr/lib/system/libsystem_platform.dylib
-     11    0.0%          /usr/lib/libc++.1.dylib
-     10    0.0%          /usr/lib/system/libsystem_malloc.dylib
-      5    0.0%          /usr/lib/system/libsystem_kernel.dylib
-      2    0.0%          /usr/lib/libc++abi.dylib
+     44    3.9%          /usr/lib/system/libsystem_pthread.dylib
+     24    2.1%          /usr/lib/system/libsystem_c.dylib
+     23    2.1%          /usr/lib/system/libsystem_kernel.dylib
+     20    1.8%          /usr/lib/system/libsystem_malloc.dylib
+     10    0.9%          /usr/lib/system/libsystem_platform.dylib
+     10    0.9%          /usr/lib/libc++.1.dylib
+      1    0.1%          /usr/lib/system/libdyld.dylib
 
  [JavaScript]:
    ticks  total  nonlib   name
-      2    0.0%    0.0%  LazyCompile: *normalizeString node:path:66:25
-      2    0.0%    0.0%  Function: ^next /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/index.js:177:16
-      1    0.0%    0.0%  RegExp: ^[\^_`a-zA-Z\-0-9!#$%&'*+.|~]+$
-      1    0.0%    0.0%  RegExp: ^[!#$%&'*+.^_`|~0-9A-Za-z-]+\/[!#$%&'*+.^_`|~0-9A-Za-z-]+$
-      1    0.0%    0.0%  LazyCompile: *nextTick node:internal/process/task_queues:103:18
-      1    0.0%    0.0%  LazyCompile: *next /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/index.js:177:16
-      1    0.0%    0.0%  LazyCompile: *fastparse /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/parseurl/index.js:95:20
-      1    0.0%    0.0%  Function: ^slowCases node:internal/util:168:19
-      1    0.0%    0.0%  Function: ^realpathSync node:fs:2469:22
-      1    0.0%    0.0%  Function: ^nop node:internal/streams/writable:73:13
-      1    0.0%    0.0%  Function: ^next /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/send/index.js:728:17
-      1    0.0%    0.0%  Function: ^merge /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/qs/lib/utils.js:47:27
-      1    0.0%    0.0%  Function: ^initAsyncResource node:internal/timers:154:27
-      1    0.0%    0.0%  Function: ^get node:internal/streams/writable:790:8
-      1    0.0%    0.0%  Function: ^fresh /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/parseurl/index.js:153:16
-      1    0.0%    0.0%  Function: ^destroy node:internal/streams/destroy:39:17
-      1    0.0%    0.0%  Function: ^compact /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/qs/lib/utils.js:190:31
-      1    0.0%    0.0%  Function: ^_destroy node:internal/streams/destroy:77:18
-      1    0.0%    0.0%  Function: ^Readable.resume node:internal/streams/readable:975:37
-      1    0.0%    0.0%  Function: ^Readable node:internal/streams/readable:186:18
-      1    0.0%    0.0%  Function: ^<anonymous> file:///Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/src/app.js:38:23
+      2    0.2%    0.2%  LazyCompile: *nextTick node:internal/process/task_queues:103:18
+      2    0.2%    0.2%  Function: ^_storeHeader node:_http_outgoing:420:22
+      2    0.2%    0.2%  Function: ^<anonymous> node:_http_outgoing:612:44
+      1    0.1%    0.1%  LazyCompile: *hasHooks node:internal/async_hooks:470:18
+      1    0.1%    0.1%  LazyCompile: *Readable.removeListener node:internal/streams/readable:916:45
+      1    0.1%    0.1%  Function: ^writeHead node:_http_server:308:19
+      1    0.1%    0.1%  Function: ^unenroll node:timers:78:18
+      1    0.1%    0.1%  Function: ^setStreamTimeout node:internal/stream_base_commons:237:26
+      1    0.1%    0.1%  Function: ^resOnFinish node:_http_server:876:21
+      1    0.1%    0.1%  Function: ^readFileSync node:fs:460:22
+      1    0.1%    0.1%  Function: ^onSocket /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/on-finished/index.js:107:21
+      1    0.1%    0.1%  Function: ^getTimerDuration node:internal/timers:388:26
+      1    0.1%    0.1%  Function: ^getOwn node:internal/bootstrap/loaders:187:16
+      1    0.1%    0.1%  Function: ^get node:internal/streams/writable:790:8
+      1    0.1%    0.1%  Function: ^finishMaybe node:internal/streams/writable:718:21
+      1    0.1%    0.1%  Function: ^createHtmlDocument /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/finalhandler/index.js:43:29
+      1    0.1%    0.1%  Function: ^afterWriteDispatched node:internal/stream_base_commons:155:30
+      1    0.1%    0.1%  Function: ^_finish node:_http_outgoing:1033:53
+      1    0.1%    0.1%  Function: ^ReadableState node:internal/streams/readable:83:23
+      1    0.1%    0.1%  Function: ^Readable.removeListener node:internal/streams/readable:916:45
+      1    0.1%    0.1%  Function: ^OutgoingMessage node:_http_outgoing:103:25
+      1    0.1%    0.1%  Function: ^AsyncResource node:async_hooks:160:14
+      1    0.1%    0.1%  Function: ^<anonymous> /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/finalhandler/index.js:86:19
 
  [C++]:
    ticks  total  nonlib   name
-  22819   98.4%   98.8%  T _napi_throw_type_error
-     40    0.2%    0.2%  T __kernelrpc_mach_port_get_context
-     28    0.1%    0.1%  T _host_request_notification
-     27    0.1%    0.1%  t _Builtins_LoadIC
-      8    0.0%    0.0%  t _Builtins_CallFunction_ReceiverIsNullOrUndefined
-      8    0.0%    0.0%  t _Builtins_CallFunction_ReceiverIsNotNullOrUndefined
-      7    0.0%    0.0%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
-      7    0.0%    0.0%  t _Builtins_BaselineOutOfLinePrologue
-      6    0.0%    0.0%  T _host_get_special_port
-      5    0.0%    0.0%  t _Builtins_ToBooleanForBaselineJump
-      4    0.0%    0.0%  t _Builtins_StoreIC
-      4    0.0%    0.0%  t _Builtins_KeyedStoreIC
-      4    0.0%    0.0%  T _mach_msg_destroy
-      3    0.0%    0.0%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pad_and_output<char, std::__1::char_traits<char> >(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> >, char const*, char const*, char const*, std::__1::ios_base&, char)
-      3    0.0%    0.0%  t _Builtins_StrictEqual_Baseline
-      3    0.0%    0.0%  t _Builtins_KeyedLoadIC
-      3    0.0%    0.0%  t _Builtins_FastNewFunctionContextFunction
-      3    0.0%    0.0%  t _Builtins_Call_ReceiverIsNullOrUndefined
-      3    0.0%    0.0%  t _Builtins_CallFunction_ReceiverIsAny
-      3    0.0%    0.0%  T _mig_strncpy_zerofill
-      2    0.0%    0.0%  t _Builtins_StringIndexOf
-      2    0.0%    0.0%  t _Builtins_StoreFastElementIC_GrowNoTransitionHandleCOW
-      2    0.0%    0.0%  t _Builtins_LoadIC_NoFeedback
-      2    0.0%    0.0%  t _Builtins_KeyedLoadIC_PolymorphicName
-      2    0.0%    0.0%  t _Builtins_KeyedLoadICBaseline
-      2    0.0%    0.0%  t _Builtins_InterpreterEntryTrampoline
-      2    0.0%    0.0%  t _Builtins_GreaterThan_Baseline
-      2    0.0%    0.0%  t _Builtins_GetProperty
-      2    0.0%    0.0%  t _Builtins_FastNewClosure
-      2    0.0%    0.0%  t _Builtins_Call_ReceiverIsAny
-      2    0.0%    0.0%  t _Builtins_BaselineLeaveFrame
-      2    0.0%    0.0%  t _Builtins_ArrayPrototypeShift
-      2    0.0%    0.0%  t _Builtins_Add_Baseline
-      2    0.0%    0.0%  T _task_restartable_ranges_register
-      1    0.0%    0.0%  t void std::__1::__tree_balance_after_insert<std::__1::__tree_node_base<void*>*>(std::__1::__tree_node_base<void*>*, std::__1::__tree_node_base<void*>*)
-      1    0.0%    0.0%  t std::__1::vector<v8::Local<v8::Object>, std::__1::allocator<v8::Local<v8::Object> > >::resize(unsigned long)
-      1    0.0%    0.0%  t std::__1::__shared_ptr_pointer<char*, std::__1::default_delete<char []>, std::__1::allocator<char> >::__on_zero_shared_weak()
-      1    0.0%    0.0%  t std::__1::__hash_table<unsigned long, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long>, std::__1::allocator<unsigned long> >::remove(std::__1::__hash_const_iterator<std::__1::__hash_node<unsigned long, void*>*>)
-      1    0.0%    0.0%  t _uv__work_done
-      1    0.0%    0.0%  t _uv__free
-      1    0.0%    0.0%  t _getrn
-      1    0.0%    0.0%  t _Builtins_StringToLowerCaseIntl
-      1    0.0%    0.0%  t _Builtins_StringSubstring
-      1    0.0%    0.0%  t _Builtins_StringPrototypeCharCodeAt
-      1    0.0%    0.0%  t _Builtins_StringEqual
-      1    0.0%    0.0%  t _Builtins_StringAddConvertRight
-      1    0.0%    0.0%  t _Builtins_StoreInArrayLiteralIC
-      1    0.0%    0.0%  t _Builtins_StoreIC_NoFeedback
-      1    0.0%    0.0%  t _Builtins_StoreFastElementIC_Standard
-      1    0.0%    0.0%  t _Builtins_RegExpPrototypeTest
-      1    0.0%    0.0%  t _Builtins_MovHandler
-      1    0.0%    0.0%  t _Builtins_MapPrototypeGet
-      1    0.0%    0.0%  t _Builtins_LoadIC_StringLength
-      1    0.0%    0.0%  t _Builtins_LoadICBaseline
-      1    0.0%    0.0%  t _Builtins_LoadGlobalIC
-      1    0.0%    0.0%  t _Builtins_KeyedStoreICBaseline
-      1    0.0%    0.0%  t _Builtins_JumpIfToBooleanTrueHandler
-      1    0.0%    0.0%  t _Builtins_GreaterThanOrEqual_Baseline
-      1    0.0%    0.0%  t _Builtins_GetNamedPropertyHandler
-      1    0.0%    0.0%  t _Builtins_FunctionPrototypeApply
-      1    0.0%    0.0%  t _Builtins_FindOrderedHashMapEntry
-      1    0.0%    0.0%  t _Builtins_FastNewStrictArguments
-      1    0.0%    0.0%  t _Builtins_DefineNamedOwnIC
-      1    0.0%    0.0%  t _Builtins_CreateShallowArrayLiteral
-      1    0.0%    0.0%  t _Builtins_CreateEmptyArrayLiteral
-      1    0.0%    0.0%  t _Builtins_CreateClosureHandler
-      1    0.0%    0.0%  t _Builtins_Construct
-      1    0.0%    0.0%  t _Builtins_Call_ReceiverIsNullOrUndefined_Baseline_Compact
-      1    0.0%    0.0%  t _Builtins_Call_ReceiverIsNotNullOrUndefined
-      1    0.0%    0.0%  t _Builtins_CEntry_Return1_DontSaveFPRegs_ArgvOnStack_NoBuiltinExit
-      1    0.0%    0.0%  t _Builtins_BitwiseAnd_Baseline
-      1    0.0%    0.0%  t _Builtins_ArrayPrototypeUnshift
-      1    0.0%    0.0%  t _Builtins_ArrayConstructorImpl
-      1    0.0%    0.0%  T node::UVException(v8::Isolate*, int, char const*, char const*, char const*, char const*)
-      1    0.0%    0.0%  T node::InternalCallbackScope::Close()
-      1    0.0%    0.0%  T node::AsyncWrap::EmitTraceEventBefore()
-      1    0.0%    0.0%  T node::AsyncWrap::EmitTraceEventAfter(node::AsyncWrap::ProviderType, double)
-      1    0.0%    0.0%  T node::AsyncHooks::pop_async_context(double)
-      1    0.0%    0.0%  T _uv_fs_req_cleanup
-      1    0.0%    0.0%  T _EVP_des_cfb64
+    395   35.2%   39.9%  T _napi_throw_type_error
+    364   32.5%   36.8%  T __kernelrpc_mach_port_get_context
+     25    2.2%    2.5%  T _host_request_notification
+     23    2.1%    2.3%  t _Builtins_LoadIC
+     13    1.2%    1.3%  t _Builtins_BaselineOutOfLinePrologue
+     12    1.1%    1.2%  T _host_get_special_port
+      8    0.7%    0.8%  t _Builtins_StoreIC
+      8    0.7%    0.8%  T _mig_strncpy_zerofill
+      7    0.6%    0.7%  t _Builtins_CallFunction_ReceiverIsNullOrUndefined
+      6    0.5%    0.6%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pad_and_output<char, std::__1::char_traits<char> >(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> >, char const*, char const*, char const*, std::__1::ios_base&, char)
+      6    0.5%    0.6%  t _Builtins_KeyedLoadIC_Megamorphic
+      6    0.5%    0.6%  t _Builtins_CallFunction_ReceiverIsNotNullOrUndefined
+      5    0.4%    0.5%  t _Builtins_KeyedLoadIC
+      4    0.4%    0.4%  t _Builtins_StringAdd_CheckNone
+      3    0.3%    0.3%  t _Builtins_KeyedStoreIC_Megamorphic
+      3    0.3%    0.3%  t _Builtins_FastNewClosure
+      3    0.3%    0.3%  t _Builtins_Call_ReceiverIsNullOrUndefined
+      3    0.3%    0.3%  t _Builtins_CallFunction_ReceiverIsAny
+      3    0.3%    0.3%  t _Builtins_BaselineLeaveFrame
+      3    0.3%    0.3%  T _mach_get_times
+      2    0.2%    0.2%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+      2    0.2%    0.2%  t _Builtins_ToBooleanForBaselineJump
+      2    0.2%    0.2%  t _Builtins_ReturnHandler
+      2    0.2%    0.2%  t _Builtins_InterpreterEntryTrampoline
+      2    0.2%    0.2%  t _Builtins_FastNewRestArguments
+      2    0.2%    0.2%  t _Builtins_CreateShallowObjectLiteral
+      2    0.2%    0.2%  T _OPENSSL_strlcpy
+      1    0.1%    0.1%  t void std::__1::__tree_balance_after_insert<std::__1::__tree_node_base<void*>*>(std::__1::__tree_node_base<void*>*, std::__1::__tree_node_base<void*>*)
+      1    0.1%    0.1%  t _uv__drain
+      1    0.1%    0.1%  t _Builtins_TypedArrayPrototypeLength
+      1    0.1%    0.1%  t _Builtins_ThrowReferenceErrorIfHoleHandler
+      1    0.1%    0.1%  t _Builtins_SubHandler
+      1    0.1%    0.1%  t _Builtins_StringToLowerCaseIntl
+      1    0.1%    0.1%  t _Builtins_StoreInArrayLiteralIC
+      1    0.1%    0.1%  t _Builtins_StoreIC_NoFeedback
+      1    0.1%    0.1%  t _Builtins_StoreICBaseline
+      1    0.1%    0.1%  t _Builtins_StoreFastElementIC_Standard
+      1    0.1%    0.1%  t _Builtins_StoreFastElementIC_GrowNoTransitionHandleCOW
+      1    0.1%    0.1%  t _Builtins_StaCurrentContextSlotHandler
+      1    0.1%    0.1%  t _Builtins_RegExpReplace
+      1    0.1%    0.1%  t _Builtins_RegExpPrototypeExecSlow
+      1    0.1%    0.1%  t _Builtins_RegExpPrototypeExec
+      1    0.1%    0.1%  t _Builtins_RecordWriteEmitRememberedSetSaveFP
+      1    0.1%    0.1%  t _Builtins_LoadIC_NoFeedback
+      1    0.1%    0.1%  t _Builtins_LoadIC_FunctionPrototype
+      1    0.1%    0.1%  t _Builtins_LdaUndefinedHandler
+      1    0.1%    0.1%  t _Builtins_LdaImmutableCurrentContextSlotHandler
+      1    0.1%    0.1%  t _Builtins_KeyedStoreICBaseline
+      1    0.1%    0.1%  t _Builtins_KeyedLoadIC_PolymorphicName
+      1    0.1%    0.1%  t _Builtins_InstanceOf_Baseline
+      1    0.1%    0.1%  t _Builtins_GreaterThan_Baseline
+      1    0.1%    0.1%  t _Builtins_GetProperty
+      1    0.1%    0.1%  t _Builtins_GetNamedPropertyHandler
+      1    0.1%    0.1%  t _Builtins_FunctionPrototypeHasInstance
+      1    0.1%    0.1%  t _Builtins_FindOrderedHashMapEntry
+      1    0.1%    0.1%  t _Builtins_DivideSmi_Baseline
+      1    0.1%    0.1%  t _Builtins_DefineNamedOwnIC
+      1    0.1%    0.1%  t _Builtins_CreateShallowArrayLiteral
+      1    0.1%    0.1%  t _Builtins_CreateEmptyArrayLiteral
+      1    0.1%    0.1%  t _Builtins_ConstructFunction
+      1    0.1%    0.1%  t _Builtins_CloneFastJSArray
+      1    0.1%    0.1%  t _Builtins_Call_ReceiverIsNullOrUndefined_Baseline_Compact
+      1    0.1%    0.1%  t _Builtins_Call_ReceiverIsNotNullOrUndefined
+      1    0.1%    0.1%  t _Builtins_Call_ReceiverIsAny
+      1    0.1%    0.1%  t _Builtins_CEntry_Return1_DontSaveFPRegs_ArgvOnStack_BuiltinExit
+      1    0.1%    0.1%  t _Builtins_BitwiseAndHandler
+      1    0.1%    0.1%  t _Builtins_ArrayPrototypePush
+      1    0.1%    0.1%  t _Builtins_Add_Baseline
+      1    0.1%    0.1%  T node::InternalCallbackScope::Close()
+      1    0.1%    0.1%  T node::Environment::RunAndClearInterrupts()
+      1    0.1%    0.1%  T node::AsyncWrap::GetAsyncId(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.1%  T _task_restartable_ranges_register
+      1    0.1%    0.1%  T _semaphore_create
+      1    0.1%    0.1%  T _mach_msg_destroy
 
  [Summary]:
    ticks  total  nonlib   name
-     23    0.1%    0.1%  JavaScript
-  23062   99.5%   99.9%  C++
-     42    0.2%    0.2%  GC
-     96    0.4%          Shared libraries
-      4    0.0%          Unaccounted
+     26    2.3%    2.6%  JavaScript
+    961   85.7%   97.2%  C++
+     40    3.6%    4.0%  GC
+    132   11.8%          Shared libraries
+      2    0.2%          Unaccounted
 
  [C++ entry points]:
    ticks    cpp   total   name
-  22848   99.3%   98.5%  T _napi_throw_type_error
-     27    0.1%    0.1%  t _Builtins_LoadIC
-      8    0.0%    0.0%  t _Builtins_CallFunction_ReceiverIsNullOrUndefined
-      8    0.0%    0.0%  t _Builtins_CallFunction_ReceiverIsNotNullOrUndefined
-      7    0.0%    0.0%  t _Builtins_KeyedLoadIC
-      6    0.0%    0.0%  t _Builtins_BaselineOutOfLinePrologue
-      5    0.0%    0.0%  t _Builtins_ToBooleanForBaselineJump
-      5    0.0%    0.0%  t _Builtins_StringPrototypeSplit
-      4    0.0%    0.0%  t _Builtins_StoreIC
-      4    0.0%    0.0%  t _Builtins_RegExpPrototypeExec
-      4    0.0%    0.0%  t _Builtins_KeyedStoreIC
-      4    0.0%    0.0%  t _Builtins_BaselineLeaveFrame
-      3    0.0%    0.0%  t _Builtins_StrictEqual_Baseline
-      3    0.0%    0.0%  t _Builtins_MapPrototypeGet
-      3    0.0%    0.0%  t _Builtins_FastNewFunctionContextFunction
-      3    0.0%    0.0%  t _Builtins_Call_ReceiverIsNullOrUndefined
-      3    0.0%    0.0%  t _Builtins_CallFunction_ReceiverIsAny
-      2    0.0%    0.0%  t _Builtins_StoreFastElementIC_GrowNoTransitionHandleCOW
-      2    0.0%    0.0%  t _Builtins_RegExpPrototypeTest
-      2    0.0%    0.0%  t _Builtins_ReflectGet
-      2    0.0%    0.0%  t _Builtins_ObjectPrototypeHasOwnProperty
-      2    0.0%    0.0%  t _Builtins_ObjectKeys
-      2    0.0%    0.0%  t _Builtins_LoadIC_NoFeedback
-      2    0.0%    0.0%  t _Builtins_KeyedLoadIC_PolymorphicName
-      2    0.0%    0.0%  t _Builtins_KeyedLoadICBaseline
-      2    0.0%    0.0%  t _Builtins_InterpreterEntryTrampoline
-      2    0.0%    0.0%  t _Builtins_GreaterThan_Baseline
-      2    0.0%    0.0%  t _Builtins_GetProperty
-      2    0.0%    0.0%  t _Builtins_FastNewClosure
-      2    0.0%    0.0%  t _Builtins_CreateShallowArrayLiteral
-      2    0.0%    0.0%  t _Builtins_Call_ReceiverIsAny
-      2    0.0%    0.0%  t _Builtins_ArrayPrototypeShift
-      2    0.0%    0.0%  t _Builtins_ArrayForEach
-      2    0.0%    0.0%  t _Builtins_Add_Baseline
-      1    0.0%    0.0%  t _Builtins_StringToLowerCaseIntl
-      1    0.0%    0.0%  t _Builtins_StringSubstring
-      1    0.0%    0.0%  t _Builtins_StringPrototypeReplace
-      1    0.0%    0.0%  t _Builtins_StringPrototypeIndexOf
-      1    0.0%    0.0%  t _Builtins_StringPrototypeCharCodeAt
-      1    0.0%    0.0%  t _Builtins_StringEqual
-      1    0.0%    0.0%  t _Builtins_StringAddConvertRight
-      1    0.0%    0.0%  t _Builtins_StoreInArrayLiteralIC
-      1    0.0%    0.0%  t _Builtins_StoreIC_NoFeedback
-      1    0.0%    0.0%  t _Builtins_StoreFastElementIC_Standard
-      1    0.0%    0.0%  t _Builtins_ObjectSetPrototypeOf
-      1    0.0%    0.0%  t _Builtins_MovHandler
-      1    0.0%    0.0%  t _Builtins_LoadIC_StringLength
-      1    0.0%    0.0%  t _Builtins_LoadICBaseline
-      1    0.0%    0.0%  t _Builtins_LoadGlobalIC
-      1    0.0%    0.0%  t _Builtins_KeyedStoreIC_Megamorphic
-      1    0.0%    0.0%  t _Builtins_KeyedStoreICBaseline
-      1    0.0%    0.0%  t _Builtins_JumpIfToBooleanTrueHandler
-      1    0.0%    0.0%  t _Builtins_GreaterThanOrEqual_Baseline
-      1    0.0%    0.0%  t _Builtins_GetNamedPropertyHandler
-      1    0.0%    0.0%  t _Builtins_FunctionPrototypeApply
-      1    0.0%    0.0%  t _Builtins_FastNewStrictArguments
-      1    0.0%    0.0%  t _Builtins_DefineNamedOwnIC
-      1    0.0%    0.0%  t _Builtins_CreateEmptyArrayLiteral
-      1    0.0%    0.0%  t _Builtins_CreateClosureHandler
-      1    0.0%    0.0%  t _Builtins_Construct
-      1    0.0%    0.0%  t _Builtins_Call_ReceiverIsNullOrUndefined_Baseline_Compact
-      1    0.0%    0.0%  t _Builtins_Call_ReceiverIsNotNullOrUndefined
-      1    0.0%    0.0%  t _Builtins_CEntry_Return1_DontSaveFPRegs_ArgvOnStack_NoBuiltinExit
-      1    0.0%    0.0%  t _Builtins_BitwiseAnd_Baseline
-      1    0.0%    0.0%  t _Builtins_ArrayPrototypeUnshift
-      1    0.0%    0.0%  t _Builtins_ArrayPrototypeJoin
-      1    0.0%    0.0%  t _Builtins_ArrayMap
-      1    0.0%    0.0%  t _Builtins_ArrayConstructorImpl
+    421   74.0%   37.6%  T _napi_throw_type_error
+     23    4.0%    2.1%  t _Builtins_LoadIC
+     10    1.8%    0.9%  t _Builtins_BaselineOutOfLinePrologue
+      8    1.4%    0.7%  t _Builtins_StoreIC
+      7    1.2%    0.6%  t _Builtins_KeyedLoadIC_Megamorphic
+      6    1.1%    0.5%  t _Builtins_CallFunction_ReceiverIsNullOrUndefined
+      6    1.1%    0.5%  t _Builtins_CallFunction_ReceiverIsNotNullOrUndefined
+      5    0.9%    0.4%  t _Builtins_KeyedLoadIC
+      4    0.7%    0.4%  t _Builtins_StringAdd_CheckNone
+      4    0.7%    0.4%  t _Builtins_RegExpPrototypeExec
+      4    0.7%    0.4%  t _Builtins_ReflectGet
+      4    0.7%    0.4%  t _Builtins_KeyedStoreIC_Megamorphic
+      3    0.5%    0.3%  t _Builtins_StringPrototypeReplace
+      3    0.5%    0.3%  t _Builtins_FastNewClosure
+      3    0.5%    0.3%  t _Builtins_Call_ReceiverIsNullOrUndefined
+      3    0.5%    0.3%  t _Builtins_BaselineLeaveFrame
+      2    0.4%    0.2%  t _Builtins_ToBooleanForBaselineJump
+      2    0.4%    0.2%  t _Builtins_ReturnHandler
+      2    0.4%    0.2%  t _Builtins_ObjectKeys
+      2    0.4%    0.2%  t _Builtins_MapPrototypeGet
+      2    0.4%    0.2%  t _Builtins_InterpreterEntryTrampoline
+      2    0.4%    0.2%  t _Builtins_FastNewRestArguments
+      2    0.4%    0.2%  t _Builtins_DeleteProperty
+      2    0.4%    0.2%  t _Builtins_CreateShallowObjectLiteral
+      2    0.4%    0.2%  t _Builtins_CreateShallowArrayLiteral
+      2    0.4%    0.2%  t _Builtins_CallFunction_ReceiverIsAny
+      1    0.2%    0.1%  t _Builtins_TypedArrayPrototypeLength
+      1    0.2%    0.1%  t _Builtins_ThrowReferenceErrorIfHoleHandler
+      1    0.2%    0.1%  t _Builtins_SubHandler
+      1    0.2%    0.1%  t _Builtins_StringToLowerCaseIntl
+      1    0.2%    0.1%  t _Builtins_StoreInArrayLiteralIC
+      1    0.2%    0.1%  t _Builtins_StoreIC_NoFeedback
+      1    0.2%    0.1%  t _Builtins_StoreICBaseline
+      1    0.2%    0.1%  t _Builtins_StoreFastElementIC_Standard
+      1    0.2%    0.1%  t _Builtins_StoreFastElementIC_GrowNoTransitionHandleCOW
+      1    0.2%    0.1%  t _Builtins_StaCurrentContextSlotHandler
+      1    0.2%    0.1%  t _Builtins_RecordWriteEmitRememberedSetSaveFP
+      1    0.2%    0.1%  t _Builtins_ObjectPrototypeHasOwnProperty
+      1    0.2%    0.1%  t _Builtins_LoadIC_NoFeedback
+      1    0.2%    0.1%  t _Builtins_LoadIC_FunctionPrototype
+      1    0.2%    0.1%  t _Builtins_LdaUndefinedHandler
+      1    0.2%    0.1%  t _Builtins_LdaImmutableCurrentContextSlotHandler
+      1    0.2%    0.1%  t _Builtins_KeyedStoreICBaseline
+      1    0.2%    0.1%  t _Builtins_KeyedLoadIC_PolymorphicName
+      1    0.2%    0.1%  t _Builtins_InstanceOf_Baseline
+      1    0.2%    0.1%  t _Builtins_GreaterThan_Baseline
+      1    0.2%    0.1%  t _Builtins_GetProperty
+      1    0.2%    0.1%  t _Builtins_GetNamedPropertyHandler
+      1    0.2%    0.1%  t _Builtins_FunctionPrototypeHasInstance
+      1    0.2%    0.1%  t _Builtins_DivideSmi_Baseline
+      1    0.2%    0.1%  t _Builtins_DefineNamedOwnIC
+      1    0.2%    0.1%  t _Builtins_CreateEmptyArrayLiteral
+      1    0.2%    0.1%  t _Builtins_ConstructFunction
+      1    0.2%    0.1%  t _Builtins_Call_ReceiverIsNullOrUndefined_Baseline_Compact
+      1    0.2%    0.1%  t _Builtins_Call_ReceiverIsNotNullOrUndefined
+      1    0.2%    0.1%  t _Builtins_Call_ReceiverIsAny
+      1    0.2%    0.1%  t _Builtins_BitwiseAndHandler
+      1    0.2%    0.1%  t _Builtins_ArrayPrototypeSlice
+      1    0.2%    0.1%  t _Builtins_ArrayPrototypePush
+      1    0.2%    0.1%  t _Builtins_ArrayMap
+      1    0.2%    0.1%  t _Builtins_Add_Baseline
 
  [Bottom up (heavy) profile]:
   Note: percentage shows a share of a particular caller in the total
@@ -202,20 +191,575 @@ Statistical profiling result from profiling1.log, (23185 ticks, 4 unaccounted, 0
   Callers occupying less than 1.0% are not shown.
 
    ticks parent  name
-  22819   98.4%  T _napi_throw_type_error
-  22771   99.8%    T _napi_throw_type_error
-  22031   96.8%      Function: ^pbkdf2Sync node:internal/crypto/pbkdf2:69:20
-  21941   99.6%        Function: ^<anonymous> file:///Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/src/app.js:38:23
-  21941  100.0%          Function: ^handle /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/layer.js:86:49
-  21718   99.0%            Function: ^next /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/route.js:116:16
-    223    1.0%            LazyCompile: ~next /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/route.js:116:16
-    406    1.8%      LazyCompile: ~pbkdf2Sync node:internal/crypto/pbkdf2:69:20
-    358   88.2%        LazyCompile: ~<anonymous> file:///Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/src/app.js:38:23
-    268   74.9%          Function: ^handle /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/layer.js:86:49
-    268  100.0%            LazyCompile: ~next /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/route.js:116:16
-     90   25.1%          LazyCompile: ~handle /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/layer.js:86:49
-     90  100.0%            LazyCompile: ~next /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/route.js:116:16
-     48   11.8%        LazyCompile: ~<anonymous> file:///Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/src/app.js:20:21
-     48  100.0%          LazyCompile: ~handle /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/layer.js:86:49
-     48  100.0%            LazyCompile: ~next /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/route.js:116:16
+    395   35.2%  T _napi_throw_type_error
+    325   82.3%    T _napi_throw_type_error
+     38   11.7%      Function: ^compileFunction node:vm:316:25
+     33   86.8%        Function: ^wrapSafe node:internal/modules/cjs/loader:1063:18
+     31   93.9%          Function: ^Module._compile node:internal/modules/cjs/loader:1103:37
+     17   54.8%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1158:37
+     14   45.2%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1158:37
+      2    6.1%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1103:37
+      2  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1158:37
+      5   13.2%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1063:18
+      5  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1103:37
+      5  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1158:37
+     37   11.4%      Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+     33   89.2%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      7   21.2%          Function: ~<anonymous> node:http:1:1
+      7  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      4   12.1%          Function: ~<anonymous> node:_http_client:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3    9.1%          Function: ~<anonymous> node:internal/cluster/primary:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3    9.1%          Function: ~<anonymous> node:internal/child_process:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3    9.1%          Function: ~<anonymous> node:child_process:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2    6.1%          LazyCompile: ~lazyWebCrypto node:crypto:125:23
+      2  100.0%            LazyCompile: ~get node:crypto:369:8
+      2    6.1%          LazyCompile: ~lazyLoadStreams node:fs:2902:25
+      2  100.0%            LazyCompile: ~get ReadStream node:fs:3045:17
+      2    6.1%          LazyCompile: ~initCJSParse node:internal/modules/esm/translators:58:28
+      2  100.0%            LazyCompile: ~commonjsStrategy node:internal/modules/esm/translators:147:60
+      2    6.1%          Function: ~<anonymous> node:dgram:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2    6.1%          Function: ~<anonymous> node:cluster:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2    6.1%          Function: ~<anonymous> node:_http_common:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    3.0%          Function: ~<anonymous> node:tty:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3    8.1%        Function: ^compileForPublicLoader node:internal/bootstrap/loaders:263:25
+      3  100.0%          Function: ^loadBuiltinModule node:internal/modules/cjs/helpers:45:27
+      3  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:800:24
+      1    2.7%        LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:263:25
+      1  100.0%          LazyCompile: ~loadBuiltinModule node:internal/modules/cjs/helpers:45:27
+      1  100.0%            LazyCompile: ~builtinStrategy node:internal/modules/esm/translators:253:58
+     32    9.8%      Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      5   15.6%        Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      5  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      5  100.0%            Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      5   15.6%        Function: ~<anonymous> node:internal/modules/esm/fetch_module:1:1
+      5  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      5  100.0%            Function: ~<anonymous> node:internal/modules/esm/get_format:1:1
+      4   12.5%        LazyCompile: ~initializeCJSLoader node:internal/process/pre_execution:535:29
+      4  100.0%          LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      4  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      4   12.5%        Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      4  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      4  100.0%            Function: ~<anonymous> node:internal/modules/cjs/loader:1:1
+      3    9.4%        Function: ~<anonymous> node:internal/modules/esm/load:1:1
+      3  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      3  100.0%            Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      2    6.3%        Function: ~<anonymous> node:internal/modules/esm/module_map:1:1
+      2  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      2  100.0%            Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      1    3.1%        LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    3.1%        LazyCompile: ~initializeSourceMapsHandlers node:internal/process/pre_execution:574:38
+      1  100.0%          LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    3.1%        LazyCompile: ~get BlockList node:net:1980:16
+      1  100.0%          Function: ~<anonymous> node:internal/modules/esm/fetch_module:1:1
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1    3.1%        Function: ~<anonymous> node:internal/source_map/source_map_cache:1:1
+      1  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%            LazyCompile: ~initializeSourceMapsHandlers node:internal/process/pre_execution:574:38
+      1    3.1%        Function: ~<anonymous> node:internal/modules/esm/resolve:1:1
+      1  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%            Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      1    3.1%        Function: ~<anonymous> node:internal/modules/esm/get_format:1:1
+      1  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%            Function: ~<anonymous> node:internal/modules/esm/resolve:1:1
+      1    3.1%        Function: ~<anonymous> node:internal/modules/cjs/loader:1:1
+      1  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%            LazyCompile: ~initializeCJSLoader node:internal/process/pre_execution:535:29
+      1    3.1%        Function: ~<anonymous> node:internal/fs/promises:1:1
+      1  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%            Function: ~<anonymous> node:internal/modules/esm/load:1:1
+      1    3.1%        Function: ~<anonymous> node:internal/blocklist:1:1
+      1  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%            LazyCompile: ~get BlockList node:net:1980:16
+     22    6.8%      Function: ^readSync node:fs:700:18
+     21   95.5%        Function: ^tryReadSync node:fs:439:21
+     21  100.0%          Function: ^readFileSync node:fs:460:22
+     11   52.4%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1158:37
+     10   47.6%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1158:37
+      1    4.5%        LazyCompile: ~tryReadSync node:fs:439:21
+      1  100.0%          LazyCompile: ~readFileSync node:fs:460:22
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1158:37
+     19    5.8%      Function: ^writevGeneric node:internal/stream_base_commons:122:23
+     19  100.0%        Function: ^Socket._writeGeneric node:net:891:42
+     19  100.0%          Function: ^Socket._writev node:net:923:36
+     19  100.0%            Function: ^doWrite node:internal/streams/writable:401:17
+     18    5.5%      Function: ^read node:internal/modules/package_json_reader:16:14
+     18  100.0%        Function: ^readPackage node:internal/modules/cjs/loader:319:21
+     15   83.3%          Function: ^resolveExports node:internal/modules/cjs/loader:512:24
+     15  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:534:28
+      3   16.7%          LazyCompile: ~resolveExports node:internal/modules/cjs/loader:512:24
+      3  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:534:28
+     10    3.1%      Function: ^write /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/finalhandler/index.js:273:18
+     10  100.0%        Function: ^runInAsyncScope node:async_hooks:197:18
+     10  100.0%          Function: ^listener /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/on-finished/index.js:162:21
+     10  100.0%            Function: ^onFinish /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/on-finished/index.js:96:21
+      8    2.5%      Function: ^resOnFinish node:_http_server:876:21
+      8  100.0%        Function: ^emit node:events:460:44
+      8  100.0%          Function: ^onFinish node:_http_outgoing:948:18
+      8  100.0%            Function: ^callback node:internal/streams/writable:553:44
+      7    2.2%      LazyCompile: ~readSync node:fs:700:18
+      7  100.0%        LazyCompile: ~tryReadSync node:fs:439:21
+      7  100.0%          LazyCompile: ~readFileSync node:fs:460:22
+      5   71.4%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1158:37
+      2   28.6%            LazyCompile: ~cjsPreparseModuleExports node:internal/modules/esm/translators:193:34
+      7    2.2%      Function: ^attachListener /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/on-finished/index.js:141:25
+      7  100.0%        Function: ^onFinished /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/on-finished/index.js:46:21
+      7  100.0%          Function: ^send /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/finalhandler/index.js:272:15
+      7  100.0%            Function: ^<anonymous> /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/finalhandler/index.js:86:19
+      5    1.5%      Function: ^resume_ node:internal/streams/readable:996:17
+      3   60.0%        Function: ^processTicksAndRejections node:internal/process/task_queues:67:35
+      2   40.0%        LazyCompile: *processTicksAndRejections node:internal/process/task_queues:67:35
+      5    1.5%      Function: ^_destroy node:_http_incoming:221:55
+      5  100.0%        Function: ^_destroy node:internal/streams/destroy:77:18
+      5  100.0%          Function: ^destroy node:internal/streams/destroy:39:17
+      5  100.0%            Function: ^endReadableNT node:internal/streams/readable:1352:23
+      4    1.2%      LazyCompile: ~read node:internal/modules/package_json_reader:16:14
+      2   50.0%        LazyCompile: ~readPackage node:internal/modules/cjs/loader:319:21
+      2  100.0%          LazyCompile: ~resolveExports node:internal/modules/cjs/loader:512:24
+      2  100.0%            LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:534:28
+      1   25.0%        LazyCompile: ~getPackageConfig node:internal/modules/esm/package_config:40:26
+      1  100.0%          LazyCompile: ~packageResolve node:internal/modules/esm/resolve:804:24
+      1  100.0%            LazyCompile: ~moduleResolve node:internal/modules/esm/resolve:894:23
+      1   25.0%        Function: ^readPackage node:internal/modules/cjs/loader:319:21
+      1  100.0%          LazyCompile: ~resolveExports node:internal/modules/cjs/loader:512:24
+      1  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:534:28
+      4    1.2%      LazyCompile: ~compileFunction node:vm:316:25
+      4  100.0%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1063:18
+      4  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1103:37
+      4  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1158:37
+      4    1.2%      Function: ^originalurl /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/parseurl/index.js:65:22
+      4  100.0%        Function: ^getResourceName /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/finalhandler/index.js:220:26
+      4  100.0%          Function: ^<anonymous> /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/finalhandler/index.js:86:19
+      4  100.0%            LazyCompile: *next /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/index.js:177:16
+      4    1.2%      Function: ^expressInit /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/middleware/init.js:29:30
+      4  100.0%        Function: ^handle /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/layer.js:86:49
+      4  100.0%          Function: ^trim_prefix /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/index.js:293:23
+      2   50.0%            LazyCompile: *next /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/index.js:177:16
+      2   50.0%            Function: ^<anonymous> /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/index.js:280:64
+      4    1.2%      Function: ^end node:_http_outgoing:953:45
+      4  100.0%        Function: ^write /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/finalhandler/index.js:273:18
+      4  100.0%          Function: ^runInAsyncScope node:async_hooks:197:18
+      4  100.0%            Function: ^listener /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/on-finished/index.js:162:21
+
+    364   32.5%  T __kernelrpc_mach_port_get_context
+
+     44    3.9%  /usr/lib/system/libsystem_pthread.dylib
+     38   86.4%    T _napi_throw_type_error
+      3    7.9%      Function: ^parserOnHeadersComplete node:_http_common:72:33
+      2    5.3%      LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1063:18
+      2  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1103:37
+      2  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1158:37
+      2  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:1015:33
+      2    5.3%      LazyCompile: ~value node:internal/console/constructor:337:20
+      2  100.0%        LazyCompile: ~log node:internal/console/constructor:376:6
+      2  100.0%          T _napi_throw_type_error
+      2  100.0%            LazyCompile: ~<anonymous> file:///Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/src/app.js:46:22
+      2    5.3%      LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      2  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      2    5.3%      LazyCompile: ~onParseError node:internal/url:564:22
+      2  100.0%        T _napi_throw_type_error
+      2  100.0%          LazyCompile: ~URL node:internal/url:637:14
+      2  100.0%            LazyCompile: ~defaultResolve node:internal/modules/esm/resolve:1034:30
+      2    5.3%      LazyCompile: ~fastparse /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/parseurl/index.js:95:20
+      2  100.0%        LazyCompile: ~parseurl /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/parseurl/index.js:35:19
+      2  100.0%          LazyCompile: ~getPathname /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/index.js:537:21
+      2  100.0%            LazyCompile: ~next /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/index.js:177:16
+      2    5.3%      LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:45:35
+      2  100.0%        LazyCompile: ~getStderr node:internal/bootstrap/switches/is_main_thread:168:19
+      2  100.0%          Function: ~<anonymous> /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/debug/src/node.js:1:1
+      2  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1103:37
+      2    5.3%      LazyCompile: ~createDebug /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/debug/src/debug.js:63:21
+      1   50.0%        Function: ~<anonymous> /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/finalhandler/index.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1103:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1158:37
+      1   50.0%        Function: ~<anonymous> /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/body-parser/lib/types/raw.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1103:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1158:37
+      1    2.6%      LazyCompile: ~wrap /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/on-finished/index.js:219:15
+      1  100.0%        LazyCompile: ~onFinished /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/on-finished/index.js:46:21
+      1  100.0%          LazyCompile: ~send /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/finalhandler/index.js:272:15
+      1  100.0%            LazyCompile: ~<anonymous> /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/finalhandler/index.js:86:19
+      1    2.6%      LazyCompile: ~toRealPath node:internal/modules/cjs/loader:433:20
+      1  100.0%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:534:28
+      1  100.0%          LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      1  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:74:31
+      1    2.6%      LazyCompile: ~stringify node:internal/modules/esm/translators:94:19
+      1  100.0%        LazyCompile: ~moduleStrategy node:internal/modules/esm/translators:114:56
+      1  100.0%          LazyCompile: ~moduleProvider node:internal/modules/esm/loader:452:28
+      1  100.0%            t _Builtins_AsyncFunctionAwaitResolveClosure
+      1    2.6%      LazyCompile: ~setupPerfHooks node:internal/process/pre_execution:367:24
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    2.6%      LazyCompile: ~setupConnectionsTracking node:_http_server:448:34
+      1  100.0%        LazyCompile: ~Server node:_http_server:458:16
+      1  100.0%          LazyCompile: ~createServer node:http:59:22
+      1  100.0%            LazyCompile: ~listen /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/application.js:633:29
+      1    2.6%      LazyCompile: ~setInterval node:timers:210:21
+      1  100.0%        LazyCompile: ~setupConnectionsTracking node:_http_server:448:34
+      1  100.0%          LazyCompile: ~Server node:_http_server:458:16
+      1  100.0%            LazyCompile: ~createServer node:http:59:22
+      1    2.6%      LazyCompile: ~realpathSync node:fs:2469:22
+      1  100.0%        LazyCompile: ~toRealPath node:internal/modules/cjs/loader:433:20
+      1  100.0%          LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:534:28
+      1  100.0%            LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      1    2.6%      LazyCompile: ~readFileHandle node:internal/fs/promises:417:30
+      1  100.0%        t _Builtins_AsyncFunctionAwaitResolveClosure
+      1    2.6%      LazyCompile: ~patchProcessObject node:internal/process/pre_execution:112:28
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    2.6%      LazyCompile: ~getPackageScopeConfig node:internal/modules/esm/package_config:105:31
+      1  100.0%        LazyCompile: ~getPackageType node:internal/modules/esm/resolve:755:24
+      1  100.0%          LazyCompile: ~getFileProtocolModuleFormat node:internal/modules/esm/get_format:54:37
+      1  100.0%            LazyCompile: ~defaultGetFormatWithoutErrors node:internal/modules/esm/get_format:106:39
+      1    2.6%      LazyCompile: ~defaultTriggerAsyncIdScope node:internal/async_hooks:455:36
+      1  100.0%        LazyCompile: ~connectionListener node:_http_server:568:28
+      1  100.0%          LazyCompile: ~onconnection node:net:1711:22
+      1    2.6%      LazyCompile: ~defaultConfiguration /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/application.js:77:57
+      1  100.0%        LazyCompile: ~init /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/application.js:64:25
+      1  100.0%          LazyCompile: ~createApplication /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/express.js:37:27
+      1  100.0%            Script: ~<anonymous> file:///Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/src/app.js:1:1
+      1    2.6%      LazyCompile: ~createClientErrorConstructor /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/http-errors/index.js:127:39
+      1  100.0%        LazyCompile: ~forEachCode /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/http-errors/index.js:259:38
+      1  100.0%          t _Builtins_ArrayForEach
+      1  100.0%            LazyCompile: ~populateConstructorExports /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/http-errors/index.js:258:37
+      1    2.6%      LazyCompile: ~assertBufferSource node:internal/modules/esm/translators:78:28
+      1  100.0%        LazyCompile: ~moduleStrategy node:internal/modules/esm/translators:114:56
+      1  100.0%          LazyCompile: ~moduleProvider node:internal/modules/esm/loader:452:28
+      1  100.0%            t _Builtins_AsyncFunctionAwaitResolveClosure
+      1    2.6%      LazyCompile: ~SocketAddress node:internal/socketaddress:47:14
+      1  100.0%        LazyCompile: ~addAddress node:internal/blocklist:60:13
+      1  100.0%          Function: ~<anonymous> node:internal/modules/esm/fetch_module:1:1
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1    2.6%      LazyCompile: ~ServerResponse node:_http_server:190:24
+      1  100.0%        LazyCompile: ~parserOnIncoming node:_http_server:934:26
+      1  100.0%          LazyCompile: ~parserOnHeadersComplete node:_http_common:72:33
+      1    2.6%      LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:894:35
+      1  100.0%        Function: ^Module._load node:internal/modules/cjs/loader:800:24
+      1  100.0%          Function: ^Module.require node:internal/modules/cjs/loader:1043:36
+      1  100.0%            Function: ^require node:internal/modules/cjs/helpers:102:31
+      1    2.6%      LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1103:37
+      1  100.0%        LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1158:37
+      1  100.0%          LazyCompile: ~Module.load node:internal/modules/cjs/loader:1015:33
+      1  100.0%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:800:24
+      1    2.6%      LazyCompile: ~Duplex node:internal/streams/duplex:54:16
+      1  100.0%        LazyCompile: ~Socket node:net:329:16
+      1  100.0%          LazyCompile: ~WriteStream node:tty:84:21
+      1  100.0%            LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:45:35
+      1    2.6%      Function: ^addListener node:events:604:58
+      1  100.0%        LazyCompile: ~Readable.on node:internal/streams/readable:886:33
+      1  100.0%          LazyCompile: ~socketListenerWrap node:_http_server:1084:37
+      1  100.0%            LazyCompile: ~first /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/ee-first/index.js:24:15
+
+     25    2.2%  T _host_request_notification
+     12   48.0%    T _napi_throw_type_error
+      1    8.3%      LazyCompile: ~trySelf node:internal/modules/cjs/loader:481:17
+      1  100.0%        LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:894:35
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:800:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:1043:36
+      1    8.3%      LazyCompile: ~toRealPath node:internal/modules/cjs/loader:433:20
+      1  100.0%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:534:28
+      1  100.0%          LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      1  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:74:31
+      1    8.3%      LazyCompile: ~realpathSync node:fs:2469:22
+      1  100.0%        LazyCompile: ~toRealPath node:internal/modules/cjs/loader:433:20
+      1  100.0%          LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:534:28
+      1  100.0%            LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      1    8.3%      LazyCompile: ~readFileHandle node:internal/fs/promises:417:30
+      1  100.0%        t _Builtins_AsyncFunctionAwaitResolveClosure
+      1    8.3%      LazyCompile: ~onParseError node:internal/url:564:22
+      1  100.0%        T _napi_throw_type_error
+      1  100.0%          LazyCompile: ~URL node:internal/url:637:14
+      1  100.0%            LazyCompile: ~defaultResolve node:internal/modules/esm/resolve:1034:30
+      1    8.3%      LazyCompile: ~headersSent /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/finalhandler/index.js:255:22
+      1  100.0%        LazyCompile: ~<anonymous> /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/finalhandler/index.js:86:19
+      1  100.0%          LazyCompile: ~<anonymous> /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/index.js:640:19
+      1  100.0%            LazyCompile: ~next /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/index.js:177:16
+      1    8.3%      LazyCompile: ~forEachCode /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/statuses/index.js:66:51
+      1  100.0%        t _Builtins_ArrayForEach
+      1  100.0%          LazyCompile: ~createMessageToStatusCodeMap /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/statuses/index.js:63:39
+      1  100.0%            Function: ~<anonymous> /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/statuses/index.js:1:1
+      1    8.3%      LazyCompile: ~first /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/ee-first/index.js:24:15
+      1  100.0%        LazyCompile: ~attachFinishedListener /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/on-finished/index.js:91:33
+      1  100.0%          LazyCompile: ~attachListener /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/on-finished/index.js:141:25
+      1  100.0%            LazyCompile: ~onFinished /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/on-finished/index.js:46:21
+      1    8.3%      LazyCompile: ~destroy node:internal/streams/destroy:39:17
+      1  100.0%        LazyCompile: ~endReadableNT node:internal/streams/readable:1352:23
+      1  100.0%          LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:67:35
+      1    8.3%      LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:45:35
+      1  100.0%        LazyCompile: ~getStderr node:internal/bootstrap/switches/is_main_thread:168:19
+      1  100.0%          Function: ~<anonymous> /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/debug/src/node.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1103:37
+      1    8.3%      LazyCompile: ~_send node:_http_outgoing:336:49
+      1  100.0%        LazyCompile: ~write_ node:_http_outgoing:831:16
+      1  100.0%          LazyCompile: ~end node:_http_outgoing:953:45
+      1  100.0%            LazyCompile: ~write /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/finalhandler/index.js:273:18
+      1    8.3%      LazyCompile: ~Timeout node:internal/timers:164:14
+      1  100.0%        LazyCompile: ~setInterval node:timers:210:21
+      1  100.0%          LazyCompile: ~setupConnectionsTracking node:_http_server:448:34
+      1  100.0%            LazyCompile: ~Server node:_http_server:458:16
+
+     24    2.1%  /usr/lib/system/libsystem_c.dylib
+     21   87.5%    T _napi_throw_type_error
+      3   14.3%      t _Builtins_ReflectGet
+      3  100.0%        Function: ^getOwn node:internal/bootstrap/loaders:187:16
+      3  100.0%          Function: ^syncExports node:internal/bootstrap/loaders:304:14
+      2   66.7%            LazyCompile: ~<anonymous> node:internal/bootstrap/loaders:290:15
+      1   33.3%            Function: ^<anonymous> node:internal/bootstrap/loaders:290:15
+      2    9.5%      LazyCompile: ~value node:internal/console/constructor:337:20
+      2  100.0%        LazyCompile: ~log node:internal/console/constructor:376:6
+      2  100.0%          T _napi_throw_type_error
+      2  100.0%            LazyCompile: ~<anonymous> file:///Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/src/app.js:46:22
+      2    9.5%      LazyCompile: ~toRealPath node:internal/modules/cjs/loader:433:20
+      2  100.0%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:534:28
+      2  100.0%          LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      2  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:74:31
+      2    9.5%      LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      2  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    4.8%      LazyCompile: ~setupTraceCategoryState node:internal/process/pre_execution:361:33
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    4.8%      LazyCompile: ~realpathSync node:fs:2469:22
+      1  100.0%        LazyCompile: ~toRealPath node:internal/modules/cjs/loader:433:20
+      1  100.0%          LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:534:28
+      1  100.0%            LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      1    4.8%      LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:67:35
+      1    4.8%      LazyCompile: ~get href node:internal/url:754:11
+      1  100.0%        LazyCompile: ~<anonymous> node:internal/modules/run_main:55:29
+      1  100.0%          LazyCompile: ~loadESM node:internal/process/esm_loader:88:41
+      1  100.0%            t _Builtins_AsyncFunctionAwaitResolveClosure
+      1    4.8%      LazyCompile: ~createHttpErrorConstructor /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/http-errors/index.js:112:37
+      1  100.0%        Function: ~<anonymous> /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/http-errors/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1103:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1158:37
+      1    4.8%      LazyCompile: ~attachFinishedListener /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/on-finished/index.js:91:33
+      1  100.0%        LazyCompile: ~attachListener /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/on-finished/index.js:141:25
+      1  100.0%          LazyCompile: ~onFinished /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/on-finished/index.js:46:21
+      1  100.0%            LazyCompile: ~send /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/finalhandler/index.js:272:15
+      1    4.8%      LazyCompile: ~afterWrite node:internal/streams/writable:490:20
+      1  100.0%        LazyCompile: ~afterWriteTick node:internal/streams/writable:485:24
+      1  100.0%          LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:67:35
+      1    4.8%      LazyCompile: ~Socket._writeGeneric node:net:891:42
+      1  100.0%        LazyCompile: ~Socket._write node:net:928:35
+      1  100.0%          LazyCompile: ~writeOrBuffer node:internal/streams/writable:368:23
+      1  100.0%            LazyCompile: ~_write node:internal/streams/writable:286:16
+      1    4.8%      LazyCompile: ~<anonymous> node:internal/validators:239:3
+      1  100.0%        LazyCompile: ~SocketAddress node:internal/socketaddress:47:14
+      1  100.0%          LazyCompile: ~addAddress node:internal/blocklist:60:13
+      1  100.0%            Function: ~<anonymous> node:internal/modules/esm/fetch_module:1:1
+      1    4.8%      Function: ~<anonymous> node:internal/modules/cjs/loader:1:1
+      1  100.0%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      1  100.0%          LazyCompile: ~initializeCJSLoader node:internal/process/pre_execution:535:29
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1    4.8%      Function: ^parserOnHeadersComplete node:_http_common:72:33
+      1    4.8%      Function: ^emit node:events:460:44
+      1  100.0%        Function: ^endReadableNT node:internal/streams/readable:1352:23
+      1  100.0%          LazyCompile: *processTicksAndRejections node:internal/process/task_queues:67:35
+
+     23    2.1%  t _Builtins_LoadIC
+      2    8.7%    Function: ^end node:_http_outgoing:953:45
+      2  100.0%      Function: ^write /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/finalhandler/index.js:273:18
+      2  100.0%        Function: ^runInAsyncScope node:async_hooks:197:18
+      2  100.0%          Function: ^listener /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/on-finished/index.js:162:21
+      2  100.0%            Function: ^onFinish /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/on-finished/index.js:96:21
+      2    8.7%    Function: ^Socket._writev node:net:923:36
+      2  100.0%      Function: ^doWrite node:internal/streams/writable:401:17
+      2  100.0%        Function: ^clearBuffer node:internal/streams/writable:532:21
+      2  100.0%          Function: ^Writable.uncork node:internal/streams/writable:344:37
+      2  100.0%            Function: ^end node:_http_outgoing:953:45
+      1    4.3%    LazyCompile: *processTicksAndRejections node:internal/process/task_queues:67:35
+      1    4.3%    Function: ^trim_prefix /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/index.js:293:23
+      1  100.0%      Function: ^<anonymous> /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/index.js:280:64
+      1  100.0%        Function: ^process_params /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/index.js:338:47
+      1  100.0%          Function: ^next /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/index.js:177:16
+      1  100.0%            Function: ^handle /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/index.js:136:31
+      1    4.3%    Function: ^toString node:buffer:789:46
+      1  100.0%      Function: ^readFileSync node:fs:460:22
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1158:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:1015:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:800:24
+      1    4.3%    Function: ^send /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/finalhandler/index.js:272:15
+      1  100.0%      Function: ^<anonymous> /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/finalhandler/index.js:86:19
+      1  100.0%        Function: ^<anonymous> /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/index.js:640:19
+      1  100.0%          Function: ^next /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/index.js:177:16
+      1  100.0%            Function: ^expressInit /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/middleware/init.js:29:30
+      1    4.3%    Function: ^resolve node:path:1091:10
+      1  100.0%      LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:534:28
+      1  100.0%        LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:894:35
+      1  100.0%          LazyCompile: ~Module._load node:internal/modules/cjs/loader:800:24
+      1  100.0%            LazyCompile: ~Module.require node:internal/modules/cjs/loader:1043:36
+      1    4.3%    Function: ^onFinished /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/on-finished/index.js:46:21
+      1  100.0%      Function: ^send /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/finalhandler/index.js:272:15
+      1  100.0%        Function: ^<anonymous> /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/finalhandler/index.js:86:19
+      1  100.0%          Function: ^<anonymous> /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/index.js:640:19
+      1  100.0%            Function: ^next /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/index.js:177:16
+      1    4.3%    Function: ^getHighWaterMark node:internal/streams/state:19:26
+      1  100.0%      Function: ^ReadableState node:internal/streams/readable:83:23
+      1  100.0%        Function: ^Readable node:internal/streams/readable:186:18
+      1  100.0%          Function: ^IncomingMessage node:_http_incoming:53:25
+      1  100.0%            Function: ^parserOnHeadersComplete node:_http_common:72:33
+      1    4.3%    Function: ^first /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/ee-first/index.js:24:15
+      1  100.0%      Function: ^attachFinishedListener /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/on-finished/index.js:91:33
+      1  100.0%        Function: ^attachListener /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/on-finished/index.js:141:25
+      1  100.0%          Function: ^onFinished /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/on-finished/index.js:46:21
+      1  100.0%            Function: ^send /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/finalhandler/index.js:272:15
+      1    4.3%    Function: ^enabled /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/application.js:438:31
+      1  100.0%      Function: ^expressInit /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/middleware/init.js:29:30
+      1  100.0%        Function: ^handle /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%          Function: ^trim_prefix /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/index.js:293:23
+      1  100.0%            LazyCompile: *next /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/index.js:177:16
+      1    4.3%    Function: ^emitReadable node:internal/streams/readable:575:22
+      1  100.0%      Function: ^onEofChunk node:internal/streams/readable:545:20
+      1  100.0%        Function: ^readableAddChunk node:internal/streams/readable:242:26
+      1  100.0%          Function: ^Readable.push node:internal/streams/readable:233:35
+      1  100.0%            Function: ^parserOnMessageComplete node:_http_common:135:33
+      1    4.3%    Function: ^emit node:events:460:44
+      1  100.0%      Function: ^onFinish node:_http_outgoing:948:18
+      1  100.0%        Function: ^callback node:internal/streams/writable:553:44
+      1  100.0%          Function: ^afterWrite node:internal/streams/writable:490:20
+      1  100.0%            Function: ^afterWriteTick node:internal/streams/writable:485:24
+      1    4.3%    Function: ^assignSocket node:_http_server:278:62
+      1  100.0%      Function: ^parserOnIncoming node:_http_server:934:26
+      1  100.0%        Function: ^parserOnHeadersComplete node:_http_common:72:33
+      1    4.3%    Function: ^addListener node:events:604:58
+      1  100.0%      Function: ^Readable.on node:internal/streams/readable:886:33
+      1  100.0%        Function: ^socketListenerWrap node:_http_server:1084:37
+      1  100.0%          Function: ^assignSocket node:_http_server:278:62
+      1  100.0%            Function: ^parserOnIncoming node:_http_server:934:26
+      1    4.3%    Function: ^Socket._writeGeneric node:net:891:42
+      1  100.0%      Function: ^Socket._writev node:net:923:36
+      1  100.0%        Function: ^doWrite node:internal/streams/writable:401:17
+      1  100.0%          Function: ^clearBuffer node:internal/streams/writable:532:21
+      1  100.0%            Function: ^Writable.uncork node:internal/streams/writable:344:37
+      1    4.3%    Function: ^Readable.resume node:internal/streams/readable:975:37
+      1  100.0%      Function: ^send /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/finalhandler/index.js:272:15
+      1  100.0%        Function: ^<anonymous> /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/finalhandler/index.js:86:19
+      1  100.0%          LazyCompile: *next /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/index.js:177:16
+      1  100.0%            Function: ^expressInit /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/middleware/init.js:29:30
+      1    4.3%    Function: ^Readable.removeListener node:internal/streams/readable:916:45
+      1  100.0%      Function: ^detachSocket node:_http_server:287:62
+      1  100.0%        Function: ^resOnFinish node:_http_server:876:21
+      1  100.0%          Function: ^emit node:events:460:44
+      1  100.0%            Function: ^onFinish node:_http_outgoing:948:18
+      1    4.3%    Function: ^Readable node:internal/streams/readable:186:18
+      1  100.0%      Function: ^IncomingMessage node:_http_incoming:53:25
+      1  100.0%        Function: ^parserOnHeadersComplete node:_http_common:72:33
+      1    4.3%    Function: ^Module._nodeModulePaths node:internal/modules/cjs/loader:669:37
+      1  100.0%      Function: ^Module.load node:internal/modules/cjs/loader:1015:33
+      1  100.0%        Function: ^Module._load node:internal/modules/cjs/loader:800:24
+      1  100.0%          Function: ^Module.require node:internal/modules/cjs/loader:1043:36
+      1  100.0%            Function: ^require node:internal/modules/cjs/helpers:102:31
+      1    4.3%    Function: ^Module._findPath node:internal/modules/cjs/loader:534:28
+      1  100.0%      LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:894:35
+      1  100.0%        Function: ^Module._load node:internal/modules/cjs/loader:800:24
+      1  100.0%          Function: ^Module.require node:internal/modules/cjs/loader:1043:36
+      1  100.0%            Function: ^require node:internal/modules/cjs/helpers:102:31
+
+     23    2.1%  /usr/lib/system/libsystem_kernel.dylib
+      3   13.0%    T _napi_throw_type_error
+      1   33.3%      LazyCompile: ~listOnTimeout node:internal/timers:512:25
+      1  100.0%        LazyCompile: ~processTimers node:internal/timers:492:25
+      1   33.3%      LazyCompile: ~cache node:internal/http:24:15
+      1  100.0%        LazyCompile: ~utcDate node:internal/http:19:17
+      1  100.0%          LazyCompile: ~_storeHeader node:_http_outgoing:420:22
+      1  100.0%            LazyCompile: ~writeHead node:_http_server:308:19
+      1   33.3%      LazyCompile: ~Duplex node:internal/streams/duplex:54:16
+      1  100.0%        LazyCompile: ~Socket node:net:329:16
+      1  100.0%          LazyCompile: ~WriteStream node:tty:84:21
+      1  100.0%            LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:45:35
+
+     20    1.8%  /usr/lib/system/libsystem_malloc.dylib
+     10   50.0%    T _napi_throw_type_error
+      2   20.0%      Function: ^listener /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/on-finished/index.js:162:21
+      2  100.0%        Function: ^onFinish /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/on-finished/index.js:96:21
+      2  100.0%          Function: ^callback /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/ee-first/index.js:53:20
+      2  100.0%            Function: ^onevent /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/ee-first/index.js:81:26
+      1   10.0%      t _Builtins_ReflectGet
+      1  100.0%        Function: ^getOwn node:internal/bootstrap/loaders:187:16
+      1  100.0%          Function: ^syncExports node:internal/bootstrap/loaders:304:14
+      1  100.0%            Function: ^<anonymous> node:internal/bootstrap/loaders:290:15
+      1   10.0%      LazyCompile: ~setupConnectionsTracking node:_http_server:448:34
+      1  100.0%        LazyCompile: ~Server node:_http_server:458:16
+      1  100.0%          LazyCompile: ~createServer node:http:59:22
+      1  100.0%            LazyCompile: ~listen /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/application.js:633:29
+      1   10.0%      LazyCompile: ~pushAsyncContext node:internal/async_hooks:539:26
+      1  100.0%        LazyCompile: ~emitBeforeScript node:internal/async_hooks:509:26
+      1  100.0%          LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:67:35
+      1   10.0%      LazyCompile: ~prepareMainThreadExecution node:internal/process/pre_execution:36:36
+      1  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1   10.0%      LazyCompile: ~peek node:internal/priority_queue:37:7
+      1  100.0%        LazyCompile: ~processTimers node:internal/timers:492:25
+      1   10.0%      LazyCompile: ~Socket._destroy node:net:764:37
+      1  100.0%        Function: ^_destroy node:internal/streams/destroy:77:18
+      1  100.0%          Function: ^destroy node:internal/streams/destroy:39:17
+      1  100.0%            LazyCompile: ~finish node:internal/streams/writable:739:16
+      1   10.0%      Function: ~<anonymous> /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/get-intrinsic/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1103:37
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1158:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:1015:33
+      1   10.0%      Function: ^write /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/finalhandler/index.js:273:18
+      1  100.0%        Function: ^runInAsyncScope node:async_hooks:197:18
+      1  100.0%          Function: ^listener /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/on-finished/index.js:162:21
+      1  100.0%            Function: ^onFinish /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/on-finished/index.js:96:21
+      1    5.0%    t _Builtins_FindOrderedHashMapEntry
+      1  100.0%      t _Builtins_MapPrototypeGet
+      1  100.0%        LazyCompile: ~readPackage node:internal/modules/cjs/loader:319:21
+      1  100.0%          LazyCompile: ~readPackageScope node:internal/modules/cjs/loader:361:26
+      1  100.0%            LazyCompile: ~trySelf node:internal/modules/cjs/loader:481:17
+
+     13    1.2%  t _Builtins_BaselineOutOfLinePrologue
+      1    7.7%    Function: ^write /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/finalhandler/index.js:273:18
+      1  100.0%      Function: ^runInAsyncScope node:async_hooks:197:18
+      1  100.0%        Function: ^listener /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/on-finished/index.js:162:21
+      1  100.0%          Function: ^onFinish /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/on-finished/index.js:96:21
+      1  100.0%            Function: ^callback /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/ee-first/index.js:53:20
+      1    7.7%    Function: ^parserOnHeadersComplete node:_http_common:72:33
+      1    7.7%    Function: ^nextTick node:internal/process/task_queues:103:18
+      1  100.0%      Function: ^endReadable node:internal/streams/readable:1342:21
+      1  100.0%        Function: ^Readable.read node:internal/streams/readable:402:35
+      1  100.0%          Function: ^resume_ node:internal/streams/readable:996:17
+      1  100.0%            Function: ^processTicksAndRejections node:internal/process/task_queues:67:35
+      1    7.7%    Function: ^initHooksExist node:internal/async_hooks:478:24
+      1  100.0%      Function: ^nextTick node:internal/process/task_queues:103:18
+      1  100.0%        Function: ^resOnFinish node:_http_server:876:21
+      1  100.0%          Function: ^emit node:events:460:44
+      1  100.0%            Function: ^onFinish node:_http_outgoing:948:18
+      1    7.7%    Function: ^handle /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%      Function: ^trim_prefix /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/index.js:293:23
+      1  100.0%        LazyCompile: *next /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/index.js:177:16
+      1  100.0%          Function: ^query /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/middleware/query.js:39:24
+      1  100.0%            Function: ^handle /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/layer.js:86:49
+      1    7.7%    Function: ^attachFinishedListener /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/on-finished/index.js:91:33
+      1  100.0%      Function: ^attachListener /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/on-finished/index.js:141:25
+      1  100.0%        Function: ^onFinished /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/on-finished/index.js:46:21
+      1  100.0%          Function: ^send /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/finalhandler/index.js:272:15
+      1  100.0%            Function: ^<anonymous> /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/finalhandler/index.js:86:19
+      1    7.7%    Function: ^addListener node:events:604:58
+      1  100.0%      Function: ^Readable.on node:internal/streams/readable:886:33
+      1  100.0%        Function: ^socketListenerWrap node:_http_server:1084:37
+      1  100.0%          Function: ^first /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/ee-first/index.js:24:15
+      1  100.0%            Function: ^onSocket /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/on-finished/index.js:107:21
+      1    7.7%    Function: ^Readable node:internal/streams/readable:186:18
+      1  100.0%      Function: ^IncomingMessage node:_http_incoming:53:25
+      1  100.0%        Function: ^parserOnHeadersComplete node:_http_common:72:33
+      1    7.7%    Function: ^<anonymous> /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/finalhandler/index.js:86:19
+      1  100.0%      LazyCompile: *next /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/index.js:177:16
+      1  100.0%        Function: ^expressInit /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/middleware/init.js:29:30
+      1  100.0%          Function: ^handle /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            Function: ^trim_prefix /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/index.js:293:23
+      1    7.7%    Function: ^<anonymous> /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/index.js:640:19
+      1  100.0%      Function: ^next /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/index.js:177:16
+      1  100.0%        Function: ^expressInit /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/middleware/init.js:29:30
+      1  100.0%          Function: ^handle /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            Function: ^trim_prefix /Users/manuel14mds/Desktop/CoderHouse/NodeJS/profiling/node_modules/express/lib/router/index.js:293:23
+
+     12    1.1%  T _host_get_special_port
 

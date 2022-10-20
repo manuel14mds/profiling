@@ -1,103 +1,65 @@
 import express from 'express'
-import crypto from 'crypto'
+import cluster from 'cluster'
+import * as fs from 'fs'
+import { cpus } from 'os'
+import { fileURLToPath } from 'url'
+import { dirname } from 'path'
 
-const app = express();
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
 
-const users = {}
+const PORT = parseInt(process.argv[2]) || 8080
+const modoCluster = process.argv[3] == 'cluster'
+
 /* 
-node --prof ./src/app.js
+node ./src/app.js 8080 FORK
+node ./src/app.js 8080 CLUSTER
 
-Postman:
-http://localhost:8080/newUser?username=marian&password=qwerty123
+artillery quick --count 50 -n 20 'http://localhost:8080/'
+artillery quick --count 50 -n 20 'http://localhost:8080/'
 
-.                   /nombre modificado del archivo
-node --prof-process profiling1.log > resultadoprofiling.txt
+node --prof-process profiling.log > resultadoProfiling.txt
+
+artillery quick --count 50 -n 20 'http://localhost:8080/' > resultFork.txt
+artillery quick --count 50 -n 20 'http://localhost:8080/' > resultCluster.txt
 */
-app.use(express.static('public'))
 
-const PORT = parseInt(process.argv[2]) || 8080;
-const server = app.listen(PORT, () => {
-    console.log(`Servidor escuchando en el puerto ${PORT}`);
-});
-server.on("error", (error) => console.log(`Error en servidor: ${error}`));
 
-app.get("/getUsers", (req, res) => {
-    res.json({ users })
-})
+if (modoCluster && cluster.isPrimary) {
+    const numCPUs = cpus().length
 
-app.get("/newUser", (req, res) => {
-    let username = req.query.username || "";
-    const password = req.query.password || "";
+    console.log(`Número de procesadores: ${numCPUs}`)
+    console.log(`PID MASTER ${process.pid}`)
 
-    username = username.replace(/[!@#$%^&*]/g, "");
-
-    if (!username || !password || users[username]) {
-        return res.sendStatus(400);
+    for (let i = 0; i < numCPUs; i++) {
+        cluster.fork()
     }
 
-    const salt = crypto.randomBytes(128).toString("base64");
-    const hash = crypto.pbkdf2Sync(password, salt, 10000, 512, "sha512");
+    cluster.on('exit', worker => {
+        console.log('Worker', worker.process.pid, 'died', new Date().toLocaleString())
+        cluster.fork()
+    })
+} else {
+    const app = express()
 
-    users[username] = { salt, hash };
+    app.get('/info', async(req, res) => {
+        let result = await info()
+        console.log(result)
+        res.json(result)
+    })
 
-    res.sendStatus(200);
-});
+    app.listen(PORT, () => {
+        console.log(`Servidor express escuchando en el puerto ${PORT}`)
+        console.log(`PID WORKER ${process.pid}`)
+    })
+}
 
-app.get("/auth-bloq", (req, res) => {
-    let username = req.query.username || "";
-    const password = req.query.password || "";
-
-    username = username.replace(/[!@#$%^&*]/g, "");
-
-    if (!username || !password || !users[username]) {
-        process.exit(1)
-        // return res.sendStatus(400);
-    }
-
-    const { salt, hash } = users[username];
-    const encryptHash = crypto.pbkdf2Sync(password, salt, 10000, 512, "sha512");
-
-    if (crypto.timingSafeEqual(hash, encryptHash)) {
-        res.sendStatus(200);
+async function info() {
+    if (fs.existsSync(__dirname+'/file.json')) {
+        let fileData = await fs.promises.readFile(__dirname+'/file.json', 'utf-8')
+        let info = JSON.parse(fileData)
+        return info
     } else {
-        process.exit(1)
-        // res.sendStatus(401);
+        return []
     }
-});
-
-app.get("/auth-nobloq", (req, res) => {
-    let username = req.query.username || "";
-    const password = req.query.password || "";
-    username = username.replace(/[!@#$%^&*]/g, "");
-
-    if (!username || !password || !users[username]) {
-        process.exit(1)
-        // return res.sendStatus(400);
-    }
-    crypto.pbkdf2(password, users[username].salt, 10000, 512, 'sha512', (err, hash) => {
-        if (users[username].hash.toString() === hash.toString()) {
-            res.sendStatus(200);
-        } else {
-            process.exit(1)
-            //res.sendStatus(401);
-        }
-    });
-});
-
-app.get('/randomdebug', (req, res) => { 
-    let randoms = []
-    for (let i = 0; i < 10000; i++) { 
-        let random = Math.floor(Math.random() * 9);
-        console.log(random); 
-        randoms.push(random); 
-    } 
-    console.log(randoms); 
-    res.send({ randoms }) 
-})
-app.get('/random', (req, res) => { 
-    let randoms = []
-    for (let i = 0; i < 10000; i++) { 
-        randoms.push(Math.floor(Math.random() * 9));
-    } 
-    res.send({ randoms }) 
-})
+}
